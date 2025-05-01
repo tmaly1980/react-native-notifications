@@ -4,16 +4,17 @@ module.exports = {
       ios: {},
       android: {
         sourceDir: './lib/android/app',
+        packageImportPath: 'import com.wix.reactnativenotifications.RNNotificationsPackage;',
         packageInstance: 'new RNNotificationsPackage(reactNativeHost.getApplication())',
       }
     },
   },
   project: {
-    ios: {
-      project: './example/ios/NotificationsExampleApp.xcworkspace',
-    },
     android: {
       sourceDir: './example/android/',
     },
+    ios: {
+      sourceDir: './example/ios/'
+    }
   },
 };
